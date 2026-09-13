@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <!-- jQuery -->
+        <script src="jquery-4.0.0.min.js"></script>
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-xl">
+            <p class="navbar-brand">LogoHere</p>
+            <i class="p-2 bi bi-emoji-kiss-fill text-success"></i>
+            <i class="p-2 bi bi-emoji-laughing-fill text-warning" style="cursor: pointer;">Click me :)</i>
+            <i class="p-2 bi bi-emoji-smile-fill text-primary"></i>
+            <i class="p-2 bi bi-emoji-smile-upside-down-fill text-secondary"></i>
+        </nav>
+        <div id="toast" class="toast hide position-fixed bottom-0 end-0 p-3">
+            <div class="toast-header">
+            <p class="h4  me-auto">Toast </p>
+            <small>Hello</small>
+            <button class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+            <p>Hi, I am the body of the toast</p>
+            </div>
+        </div>
+
+        <div id="carouselPikas" class="carousel h-50 w-25 bg-black" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img 
+                    alt="pika1"
+                    src="https://cdn.pixabay.com/photo/2021/02/07/19/52/pikachu-5992504_1280.png"
+                    class="img-fluid"
+                    >
+                </div>
+                <div class="carousel-item">
+                    <img
+                    alt="pika2"
+                    src="https://cdn.pixabay.com/photo/2016/09/09/11/59/pokemon-1656997_1280.png"
+                    class="img-fluid"
+                    >
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#carouselPikas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#carouselPikas" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="btn-group p-3">
+            <button class="m-1 btn btn-primary">Button1</button>
+            <button class="m-1 btn btn-success">Button2</button>
+            <button class="m-1 btn btn-warning">Button3</button>
+        </div>
+
+        <script>
+        $(function(){
+            $(".text-warning").on("click", function(){
+                $("#toast").toast("show")
+            })
+        })
+        </script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
+
+
+
+
